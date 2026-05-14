@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Sign Up Form </title>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/booking.css">
+</head>
+
+<body>
+<div class="main">
+    <ul>
+      <ul class="list">
+        <li class="logo"><a href="index.html"><img src="earth-globe.png" alt="Logo" style="width:36px;height:36px"></a></li>
+        <div class="search">
+            <form >
+              <input type="text" name="search_p" placeholder="Search.." size="50">
+          
+              <input type="image" name="submit_p" src="search_icon.png" alt="Search image" style="width:22;height:22; margin-left: 35px;">
+            </form>
+        </div>
+      </ul>
+      <ul class="list2">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Popular.html">Popular</a></li>
+        <li class="active-menu"><a href="booking.html">Booking</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </ul>
+</div>
+
+        <div class="hotl">
+          <img src="images//destination1//9.jpg" alt="Girni">
+          <p>To Make hotel  selection & Reservation Click Here <span style="font-size:50px;">&#8595;</span></p>
+        </div>
+        <p id = "GFG_UP" style =
+            "font-size: 19px; font-weight: bold;">
+        </p>
+          
+        <button style="margin-left:600px" onclick = "GFG_Fun()">
+            click here
+        </button>
+          
+        <p id = "GFG_DOWN" style =
+            "color: green; font-size: 24px; font-weight: bold;">
+        </p>
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+              
+            function GFG_Fun() {
+                var a = document.createElement('a'); 
+                  
+                var link = document.createTextNode("Hotel Link");
+                
+                a.appendChild(link); 
+                a.title = "Hotel Link"; 
+                a.href = "https://shorturl.ae/65B73"; 
+                document.body.appendChild(a); 
+            }
+        </script> 
+
+  <form>
+
+    <div class="login-box">
+
+      <h1><strong>Visiting Booking Form</strong></h1>
+
+      <div class="textbox">
+				<input type="text" placeholder="First Name" name="ffirst" value=""  onkeypress="return /[a-zA-Z]/i.test(event.key)" required>  
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Last Name" name="flast" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required> 
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Email" name="femail" value="" required pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email">
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Address" name="Address" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Phone" name="fphone" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" pattern="([0-9]){10,}" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Destination" name="fdesti" value="" required>
+			</div>
+      <div class="textbox">
+
+      <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input style="border: 1px solid green ; color: white;" type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input style="border: 1px solid green ; color: white;" type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+
+</div>
+     <div>  
+       <input style="margin-top: 10px;" type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2023-06-14T00:00">
+       </div>
+
+      <div class="btn">
+				<input name="submit" value="Submit" type="submit">
+			</div>
+
+      <center style="color: white; text-decoration: none;"> Thank you for booking with us ! </a> <center>
+
+    </div>
+    
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Sign Up Form </title>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/signup&feedback.css">
+</head>
+
+<body>
+<div class="main">
+    <ul>
+      <ul class="list">
+        <li class="logo"><a href="index.html"><img src="earth-globe.png" alt="Logo" style="width:36px;height:36px"></a></li>
+        <div class="search">
+            <form >
+              <input type="text" name="search_p" placeholder="Search.." size="50">
+          
+              <input type="image" name="submit_p" src="search_icon.png" alt="Search image" style="width:22;height:22; margin-left: 35px;">
+            </form>
+        </div>
+      </ul>
+      <ul class="list2">
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Popular.html">Popular</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li class="active-menu"><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </ul>
+</div>
+
+  <form>
+
+    <div class="login-box">
+
+      <h2 > Feedback </h2>
+      <div style="color:white;" class="textbox">
+        <p>How do you rate your overall experience?</p>
+      </div>
+      <form >
+      	<div style="color:white;" >
+       <input type="radio" name="good" id="good" checked>Good
+       <input type="radio" name="good" id="good" >Average
+       <input type="radio" name="good" id="good" >Bad
+       </div>
+       </form>
+
+      <div class="textbox">
+        <input type="text" placeholder="Name" id="fname" name="fname" value="" required>  
+      </div>
+
+      <div class="textbox">
+        <input type="text" placeholder="Email" id="email" name="email" value="" required pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email">
+      </div>
+
+      <div class="textbox">
+        <input type="text" placeholder="Phone" id="phone" name="phone" value="" required onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" pattern="([0-9]){10,}">
+      </div>
+          
+      <div>    
+        <textarea id="subject" name="subject" placeholder="Write feedback.." style="width: 280px;height:80px"></textarea>    
+      </div> 
+
+      <input class="btn" type="submit" name="" value="Submit"> <br> <br>
+
+      <center style="color: white;"> Thank you for taking the time to give us your valuable feedback </a> <center>
+
+    </div>
+    
+  </form>
+
+</body>
+</html>
